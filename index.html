@@ -27,17 +27,17 @@
         </div>
     </header>
     <div>
-        <nav id="menu">
+        <nav id="cont_menu">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nuestros Servicios</a></li>
-                <li><a href="#">Instructores</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li><a href="#inicio"class="btn_ancla">Inicio</a></li>
+                <li><a href="#servicio"class="btn_ancla">Nuestros Servicios</a></li>
+                <li><a href="#instructor"class="btn_ancla">Instructores</a></li>
+                <li><a href="#redes"class="btn_ancla">Contactanos</a></li>
             </ul>
         </nav>
     </div>
 
-    <div class="callbacks_container">
+    <div class="callbacks_container" id="inicio">
         <ul class="rslides" id="slider4">
           <li>
             <img src="imagenes/slide1.jpg" alt="">
@@ -56,7 +56,7 @@
 
       <section class="articulos">
         <br>
-        <div>
+        <div  id="servicio">
             <h2>Nuestros Servicios</h2>
             <div class="linea"></div>
         </div>
@@ -168,7 +168,19 @@
   });
 });
   </script>
-
+  <!--Desplazamientos entre la pagina-->
+<script>
+  $(".btn_ancla").click(function () {
+  var ancla = $(this).attr("href");
+  $("html,body").animate(
+    {
+      scrollTop: $(ancla).offset().top,
+    },
+    1000
+  );
+  $("#contenedormenu").toggleClass("abrirmenu");
+});
+</script>
    <!-- <script>
      new WOW().init();
    </script> -->
