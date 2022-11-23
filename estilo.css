@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: verdana;
+}
+@media screen and (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        /* border: 1px red solid; */
+    }
+    .barras{
+        font-size: 40px;
+        color:#ff4048 ;
+        padding-right: 30px;
+    }
+    nav {
+        background-color: #f92b35d9;
+        border: 1px #f92b35d9 solid;
+    }
+    nav ul {
+        padding: 30px;
+        list-style: none;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav li a {
+        color: white;
+        padding: 5px;
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
+        border-bottom: 2px rgb(255, 249, 249) dotted;
+    }
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        }
+      
+      .rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 0;
+        }
+      .rslides li:first-child {
+        position: relative;
+        display: block;
+        float: left;
+        }
+      .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        border: 0;
+        }
+        /*  fin */
+
+.callbacks_container {
+    position: relative;
+    margin:auto;
+    /* border: 1px red solid; */
+    }
+    .callbacks_container img{
+      height:300px;
+      object-fit:cover;
+    }
+    .callbacks_container ul {
+      margin:0px;
+      }
+  .caption {
+    position: absolute;
+    z-index: 2;
+    text-align: right;
+    width: 300px;
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-30%, -5%);
+    background-color: rgba(0, 0, 0,0.7);
+    }
+  .callbacks_nav {
+    position: absolute;
+    top: 52%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 50px;
+    width: 30px;
+    background: transparent url("imagenes/flechas.png") no-repeat left top;
+    margin-top: -45px;
+    }
+  .callbacks_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+    }
+    /* .articulos{
+     
+      /* border: 1px red solid; */
+    } */
+    .articulos h2 {
+        text-align: center;
+        font-size: 30px;
+        padding-top: 15px;
+        color: #ff4048;
+    }
+    .linea {
+        margin: auto;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 180px;
+        width: 100px;
+        height: 8px;
+        background-color: black;
+    }
+    h2{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 15px;
+        color: #ff4048;
+    }
+    .articulos i{
+      justify-content: center;
+      align-items: center;
+      font-size: 60px;
+      color: #c0454b;
+      padding: 15px;
+      border-radius: 5px;
+      margin-left: 38%;
+      border: 2px gray solid;
+    }
+    .articulos h3 {
+      text-align: center;
+    }
+    .articulos p{
+      line-height: 25px;
+      text-align: center;
+    }
+    .articulos article {
+      display: flex;
+      flex-direction: column;
+      display: inline-block;
+      padding: 15px;
+      width: 350px;
+      border: 1px gray solid;
+      margin-bottom: 15px;
+      margin-left: 15%;
+      border-radius: 3px;
+      box-shadow: 0px 0px 10px #d6d0d0;
+    }
+    .animacion1 {
+      animation-name: ani1;
+      animation-duration: 2s;
+    }
+    .animacion2 {
+      animation-name: ani2;
+      animation-duration: 4s;
+    }
+    .animacion3 {
+      animation-name: ani3;
+      animation-duration: 6s;
+    }
+    .animacion4 {
+      animation-name: ani4;
+      animation-duration: 8s;
+    }
+    .instructores{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 10px;
+    }
+    .instructores img{
+      width: 230px;
+      height: 200px;
+      display: block;
+      object-fit: cover;
+    }
+    .parrallaxas{
+      background-image: url(imagenes/foto_parallaxs.jpg);
+      background-size: cover;
+      background-position: 70%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+    }
+    .texto{
+      text-align: right;
+      margin-right: 50px;
+      position: absolute;
+    }
+    .parrallaxas p{
+      font-size: 60px;
+      line-height: 70px;
+      color: white;
+      text-align: right;
+      margin-bottom: 350px;
+    }
+    .color{
+      color: #ff4048;
+    }
+    .parrallaxas a{
+      text-decoration: none;
+      background-color: #ff4048;
+      color: white;
+      padding: 15px 30px;
+    }
+    footer{
+      border: 3px #ff4048 solid;
+      padding: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .redes{
+      display: block;
+      color: #ff4048;
+      font-size: 22px;
+      border: 1px silver solid;
+      padding: 20px 22px;
+      border-radius: 50%;
+    }
+    #subir{
+      font-size: 50px;
+      color: #333;
+      position: fixed;
+      z-index: 30;
+      bottom: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+    /* .flecha {
+      } */
+}
